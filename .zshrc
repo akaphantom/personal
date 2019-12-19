@@ -210,3 +210,6 @@ function drmiold { docker images |grep none|awk '{print $3; }'|xargs docker rmi;
 alias ppp='pipupgrade --latest --yes;pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U' # Обновление всего питона с либами
 alias pip='pip3'
 alias upup='upgrade_oh_my_zsh;brewup;ppp;dpall;drmiold' # обновить всего питона, пулл новых образов Docker и в конце удаление устаревших образов
+
+
+
