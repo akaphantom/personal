@@ -191,7 +191,7 @@ alias gm='gco master;fp'
 alias gmem='git merge master'
 alias gdev='gco development;fp'
 alias gbr='git br'
-function sqh { d=$(date +%Y-%m-%d--%T);git reset --soft $1;git commit --amend -m "Произведен SQUASH от коммита $1 - $d";git push -f; } # squash коммитов, нужен первый (самый древний среди цепочти твоих подряд) коммит и сообщение для будущего коммита сквоша
+function sqh { d=$(date +%Y-%m-%d--%T);git reset --soft $1;git commit --amend -m "Произведен SQUASH от коммита $1 - $d";git push -f; } # нужен коммит от которого сквошить
 function gci { git commit -am "$1"; } # Коммит с сообщением
 function gse { gl --all --grep=$1; }  # Поиск коммита по содержимому сообщения в коммите
 # DOCKER
