@@ -207,7 +207,7 @@ alias drmi='docker rmi'
 function dpall { docker images |grep -v REPOSITORY|awk '{print $1}'|xargs -L1 docker pull; }
 function drmiold { docker images |grep none|awk '{print $3; }'|xargs docker rmi; }
 # PYTHON
-alias ppp='pipupgrade --latest --yes;pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U' # Обновление всего питона с либами
+alias ppp='pip3 install pip;pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U' # Обновление всего питона с либами
 alias pip='pip3'
 alias upup='upgrade_oh_my_zsh;brewup;ppp;dpall;drmiold' # обновить всего питона, пулл новых образов Docker и в конце удаление устаревших образов
 
