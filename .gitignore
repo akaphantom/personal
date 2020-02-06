@@ -110,3 +110,4 @@ chromedriver
 .vscode-insiders/
 ~/groovy
 jetbrains-agent.jar
+groovy/
