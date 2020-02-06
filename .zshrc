@@ -99,6 +99,7 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 export HISTTIMEFORMAT="%d/%m/%y %T "
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH:./Library/Python/3.8/lib/python/site-packages"
 export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"'
+export GROOVY_TURN_OFF_JAVA_WARNINGS=true
 alias ls='ls -l'
 alias l='ls -FGlAahp'
 alias o='most'
@@ -128,7 +129,7 @@ alias gmer="git mergetool --tool=meld"
 alias brewup='brew update; brew upgrade'
 alias cat='ccat'
 alias vco='open -a "Visual Studio Code - Insiders"'
-alias vcoz='vco .zshrc'
+alias vcoz='vco ~/.zshrc'
 #создать директорию и перейти в нее
 function mkcd {
     mkdir -p -- "$1" &&

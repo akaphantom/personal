@@ -108,3 +108,5 @@ chromedriver
 .pylint.d/
 .tooling/
 .vscode-insiders/
+~/groovy
+jetbrains-agent.jar
