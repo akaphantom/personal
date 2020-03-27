@@ -112,3 +112,6 @@ chromedriver
 jetbrains-agent.jar
 VirtualBox/
 groovy/
+dockerImages/
+.anyconnect
+.cisco/
