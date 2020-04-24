@@ -115,3 +115,4 @@ groovy/
 dockerImages/
 .anyconnect
 .cisco/
+rancher_images/
