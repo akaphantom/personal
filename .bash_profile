@@ -13,7 +13,7 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"'
 # Finished adapting your PATH environment variable for use with MacPorts.
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-alias ls='ls -l'
+alias ls='ls -laAh'
 alias l='ls -FGlAahp'
 alias o='less'
 alias ..='cd ..'
