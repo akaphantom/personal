@@ -130,6 +130,7 @@ alias brewup='brew update; brew upgrade'
 alias cat='ccat'
 alias vco='open -a "Visual Studio Code - Insiders"'
 alias vcoz='vco ~/.zshrc'
+alias rep='cd ~/HI-TECH/repo'
 #создать директорию и перейти в нее
 function mkcd {
     mkdir -p -- "$1" &&
