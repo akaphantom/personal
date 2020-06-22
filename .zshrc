@@ -140,17 +140,7 @@ alias df='df -H'
 alias du='du -ch'
 alias top='htop -t'
 alias less='most'
-# get current branch in git repo
-function parse_git_branch {
-	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
-	if [ ! "${BRANCH}" == "" ]
-	then
-		STAT=`parse_git_dirty`
-		echo "[${BRANCH}${STAT}]"
-	else
-		echo ""
-	fi
-}
+
 #   extract:  Extract most known archives with one command
 #   ------------------------------------------------------
     extract () {
@@ -176,6 +166,18 @@ function parse_git_branch {
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 # GIT
+# get current branch in git repo
+function parse_git_branch {
+	BRANCH=`git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'`
+	if [ ! "${BRANCH}" == "" ]
+	then
+		STAT=`parse_git_dirty`
+		echo "[${BRANCH}${STAT}]"
+	else
+		echo ""
+	fi
+}
+
 alias gqs='git-quick-stats'
 alias fp='git fetch;git pull'
 alias аз='git fetch;git pull'
@@ -196,6 +198,7 @@ alias gbr='git br'
 function sqh { d=$(date +%Y-%m-%d--%T);git reset --soft $1;git commit --amend -m "Произведен SQUASH от коммита $1 - $d";git push -f; } # нужен коммит от которого сквошить
 function gci { git commit -am '$1'; } # Коммит с сообщением
 function gse { gl --all --grep=$1; }  # Поиск коммита по содержимому сообщения в коммите
+
 # DOCKER
 alias dsp='docker system prune -f'
 alias di='docker images'
@@ -208,6 +211,7 @@ alias dk='docker kill'
 alias drmi='docker rmi'
 function dpall { docker images |grep -v REPOSITORY|awk '{print $1}'|xargs -L1 docker pull; }
 function drmiold { docker images |grep none|awk '{print $3; }'|xargs docker rmi; }
+
 # PYTHON
 alias ppp='pip3 install pip;pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U' # Обновление всего питона с либами
 alias pip='pip3'
