@@ -127,7 +127,7 @@ alias bp='a ~/.bash_profile'
 alias G="| grep --color=auto -P"
 alias gmer="git mergetool --tool=meld"
 alias brewup='brew update; brew upgrade'
-alias cat='ccat'
+# alias cat='ccat'
 alias vco='open -a "Visual Studio Code - Insiders"'
 alias vcoz='vco ~/.zshrc'
 alias rep='cd ~/HI-TECH/repo'
