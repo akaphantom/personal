@@ -194,7 +194,7 @@ alias gco='git co'
 alias gm='gco master;fp'
 alias gmem='git merge master'
 alias gdev='gco development;fp'
-alias gbr='git br'
+alias gbr='git br --all'
 alias glgr='git log --graph --oneline --decorate'
 function sqh { d=$(date +%Y-%m-%d--%T);git reset --soft $1;git commit --amend -m "Произведен SQUASH от коммита $1 - $d";git push -f; } # нужен коммит от которого сквошить
 function gci { git commit -am $1; } # Коммит с сообщением
