@@ -54,3 +54,5 @@ repo/
 .matplotlib/
 .vs-kubernetes/
 HI-TECH/
+.iterm2/
+.iterm2_shell_integration.zsh

@@ -220,3 +220,6 @@ alias upup='upgrade_oh_my_zsh;brewup;ppp;dpall;drmiold' # обновить вс�
 
 # WORK
 alias hi='cd ~/HI-TECH/repo'
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
