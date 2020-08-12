@@ -60,3 +60,4 @@ PACKs
 .pip/
 .pyenv/.wget-hsts
 .pyenv/
+.wget-hsts
