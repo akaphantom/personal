@@ -58,4 +58,4 @@ HI-TECH/
 .iterm2_shell_integration.zsh.bash_history
 PACKs
 .pip/
-.pyenv/
+.pyenv/.wget-hsts
