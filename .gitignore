@@ -61,3 +61,4 @@ PACKs
 .pyenv/.wget-hsts
 .pyenv/
 .wget-hsts
+.vnc/
