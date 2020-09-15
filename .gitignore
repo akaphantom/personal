@@ -61,4 +61,4 @@ PACKs
 .pyenv/.wget-hsts
 .pyenv/
 .wget-hsts
-.vnc/
+.vnc/.vscode-oss/
