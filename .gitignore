@@ -63,3 +63,5 @@ PACKs
 .wget-hsts
 .vnc/
 .vscode-oss/
+.mume
+.mume/
