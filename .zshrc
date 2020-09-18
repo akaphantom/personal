@@ -75,11 +75,11 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -100,6 +100,7 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH:./Library/Python/3.8/lib/python/site-packages"
 export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"'
 export GROOVY_TURN_OFF_JAVA_WARNINGS=true
+alias vim='nvim'
 alias ls='ls -a'
 alias l='ls -GlaAhTO'
 alias o='most'
