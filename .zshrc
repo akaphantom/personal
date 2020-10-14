@@ -225,3 +225,4 @@ alias hi='cd ~/HI-TECH/repo'
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 export PATH="/usr/local/opt/python@3.9/bin:$PATH"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
