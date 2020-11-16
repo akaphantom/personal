@@ -31,8 +31,8 @@
 .vscode-insiders/
 .vscode/
 .yandex/
-.zcompdump-MacBook Pro-5.7.1
-.zcompdump-MacBook Pro — Илья-5.7.1
+.zcompdump-MacBook\ Pro-5.7.1
+.zcompdump-MacBook\ Pro\ —\ Илья-5.7.1
 .zsh_history
 Applications/
 Boostnote/
@@ -66,4 +66,5 @@ PACKs
 .mume
 .mume/
 .bashrc
-.zcompdump-MacBook Pro-5.7.1
+.zcompdump-MacBook\ Pro-5.7.1
+.zcompdump-MacBook\ Pro-5.8
