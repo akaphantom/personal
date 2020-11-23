@@ -66,5 +66,10 @@ PACKs
 .mume
 .mume/
 .bashrc
+<<<<<<< HEAD
 .zcompdump-MacBook\ Pro-5.7.1
 .zcompdump-MacBook\ Pro-5.8
+=======
+Public/
+Sites/
+>>>>>>> ad
