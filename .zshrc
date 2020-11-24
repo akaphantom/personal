@@ -63,7 +63,7 @@ DEFAULT_USER=$USER
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  docker common-aliases pylint docker-compose git gitfast git-extras git-flow gradle history jira macports colorize pip python brew osx python django rake rake-fast repo
+  docker common-aliases pylint docker-compose git gitfast git-extras git-flow gradle history jira macports colorize pip python brew osx python django rake rake-fast repo jfrog
 )
 source $ZSH/oh-my-zsh.sh
 fpath=(/usr/local/share/zsh-completions $fpath)
