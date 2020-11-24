@@ -70,3 +70,4 @@ PACKs
 Public/
 Sites/
 .jfrog/
+.pypirc
