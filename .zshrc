@@ -226,3 +226,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 export PATH="/usr/local/opt/python@3.9/bin:$PATH"
 export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+
+# JFROG ARTIFACTORI CLI
+autoload -Uz compinit
+compinit
+source /Users/ilya/.jfrog/jfrog_zsh_completion

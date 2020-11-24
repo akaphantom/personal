@@ -45,7 +45,6 @@ Music/
 Pictures/
 Projects/
 VirtualBox VMs/
-X5/
 chromedriver
 go/
 syslinux/
@@ -66,10 +65,8 @@ PACKs
 .mume
 .mume/
 .bashrc
-<<<<<<< HEAD
 .zcompdump-MacBook\ Pro-5.7.1
 .zcompdump-MacBook\ Pro-5.8
-=======
 Public/
 Sites/
->>>>>>> ad
+.jfrog/
