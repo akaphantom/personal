@@ -71,3 +71,4 @@ Public/
 Sites/
 .jfrog/
 .pypirc
+.packer.d/
