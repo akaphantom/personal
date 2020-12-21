@@ -72,3 +72,7 @@ Sites/
 .jfrog/
 .pypirc
 .packer.d/
+.fzf/
+.vim/autoload/
+.vim/plugged/
+.zshrc.pre-oh-my-zsh
